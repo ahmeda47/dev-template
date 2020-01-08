@@ -1,0 +1,26 @@
+{
+  "name": "dev-template",
+  "version": "1.0.0",
+  "description": "generates a pdf with developer information taken from github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmeda47/dev-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmeda47/dev-template/issues"
+  },
+  "homepage": "https://github.com/ahmeda47/dev-template#readme",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "inquirer": "^7.0.3"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
