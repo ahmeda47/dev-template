@@ -4,7 +4,7 @@
   "description": "generates a pdf with developer information taken from github",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ahmeda47/dev-template#readme",
   "dependencies": {
     "axios": "^0.19.1",
+    "html-pdf": "^2.2.0",
     "inquirer": "^7.0.3"
   },
   "devDependencies": {
