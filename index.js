@@ -51,6 +51,6 @@ Template.prototype.getUsername = function(){
         } 
 
 
-const me = new Template()
-me.getUsername()
+const newDev = new Template()
+newDev.getUsername()
 module.exports = Template;
