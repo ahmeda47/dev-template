@@ -1,36 +1,34 @@
-class generateHTML{
-  constructor(){}
-    generateHTML(res, color) {
+class generateHTML {
+  constructor() {}
+  generateHTML(res, color) {
+    const colors = {
+      green: {
+        wrapperBackground: "#E6E1C3",
+        headerBackground: "#C1C72C",
+        headerColor: "black",
+        photoBorderColor: "#black"
+      },
+      blue: {
+        wrapperBackground: "#5F64D3",
+        headerBackground: "#26175A",
+        headerColor: "white",
+        photoBorderColor: "#73448C"
+      },
+      pink: {
+        wrapperBackground: "#879CDF",
+        headerBackground: "#FF8374",
+        headerColor: "white",
+        photoBorderColor: "#FEE24C"
+      },
+      red: {
+        wrapperBackground: "#DE9967",
+        headerBackground: "#870603",
+        headerColor: "white",
+        photoBorderColor: "white"
+      }
+    };
 
-
-      const colors = {
-          green: {
-            wrapperBackground: "#E6E1C3",
-            headerBackground: "#C1C72C",
-            headerColor: "black",
-            photoBorderColor: "#black"
-          },
-          blue: {
-            wrapperBackground: "#5F64D3",
-            headerBackground: "#26175A",
-            headerColor: "white",
-            photoBorderColor: "#73448C"
-          },
-          pink: {
-            wrapperBackground: "#879CDF",
-            headerBackground: "#FF8374",
-            headerColor: "white",
-            photoBorderColor: "#FEE24C"
-          },
-          red: {
-            wrapperBackground: "#DE9967",
-            headerBackground: "#870603",
-            headerColor: "white",
-            photoBorderColor: "white"
-          }
-        };
-        
-          return `<!DOCTYPE html>
+    return `<!DOCTYPE html>
         <html lang="en">
           <head>
               <meta charset="UTF-8" />
@@ -179,7 +177,7 @@ class generateHTML{
               <body>
               <div class="container">
                   <div class="card">
-                      <h1>Your name</h1> <h2>${res.data.name}</h2>
+                      <h1>Your name</h1> <h2>${res.data.login}</h2>
                   </div>
                   <div class="card">
                       <h1>you are following</h1> <h2>${res.data.following}</h2>
@@ -192,8 +190,7 @@ class generateHTML{
                   </div>
               </div>
           </body>
-          </html>`
-                
-              }
-            }
-    module.exports = generateHTML;
+          </html>`;
+  }
+}
+module.exports = generateHTML;
